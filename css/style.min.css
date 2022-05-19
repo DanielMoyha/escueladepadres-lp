@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+:root {
+	--btn-primary: #ff5714;
+	--border-btn-primary: #ff5714;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden !important;
@@ -754,8 +759,8 @@ small {
 	margin-top: -80px;
 }
 .btn-primary {
-	background-color: #ff5714 !important;
-	border: 1px solid #ff5714 !important;
+	background-color: var(--btn-primary) !important;
+	border: 1px solid var(--border-btn-primary) !important;
 	color: #fff !important;
 	box-shadow: 0 3px 5px 0 rgba(255, 87, 20, 0.1);
 }
@@ -2022,17 +2027,190 @@ button:not(:disabled) {
 	position: relative;
 	background-position: center center;
 }
-.bg-single-home,
+
+/* --------------------------- ABOUT---------------------------  */
+
+.about .text-center {
+	margin-bottom: 100px;
+}
+.about .img-bg {
+	position: relative;
+}
+.about .img-bg::before {
+	content: '';
+	position: absolute;
+	top: -60px;
+	right: 40%;
+	left: -80px;
+	bottom: -60px;
+	border-radius: 20px;
+	background-color: rgba(255, 128, 93, 0.2);
+}
+.about .about-img {
+	position: relative;
+	border-radius: 20px;
+}
+.about .about-title {
+	font-size: 26px;
+}
+.about .about-box {
+	border: none;
+}
+.about .about-box .card-body {
+	border-radius: 10px;
+	background-color: rgba(255, 128, 93, 0.06);
+}
+.about .about-box .card-body .avatar-title {
+	border-radius: 10px;
+	align-items: center;
+	background-color: #ffe6df;
+}
+.about .about-box .card-body .avatar-title i {
+	font-size: 38px;
+	color: #ff805d;
+}
+@media (max-width: 768px) {
+	.about .text-center {
+		margin-bottom: 30px;
+	}
+	.about .img-bg {
+		margin-bottom: 40px;
+	}
+	.about .img-bg::before {
+		display: none;
+	}
+}
+.about .tab-pane .about-img img {
+	border-radius: 20px;
+}
+.about .nav.nav-tabs {
+	border-bottom: none;
+}
+.about .nav.nav-tabs .nav-item {
+	padding-right: 10px;
+}
+.about .nav.nav-tabs .nav-item .nav-link {
+	color: #252d31;
+	padding: 18px 0;
+	border-radius: 8px;
+}
+.about .nav.nav-tabs .nav-item .nav-link.active,
+.about .nav.nav-tabs .nav-item .nav-link :focus {
+	border: 2px solid rgba(255, 128, 93, 0.8);
+	color: #ff805d;
+	box-shadow: rgba(37, 45, 49, 0.27) 0px 3px 8px;
+	transition: all 0.9s ease 0s;
+	background: transparent;
+}
+.about .nav.nav-tabs .nav-item .nav-link:hover {
+	border: 2px solid rgba(255, 128, 93, 0.8);
+	color: #ff805d;
+}
+.about .tab-content {
+	padding-top: 1rem;
+}
+.about .tab-content .accordion .accordion-item {
+	border-radius: 8px;
+	margin: 19px 0 0 0;
+	border: 1px solid #e0e0e0;
+}
+.about .tab-content .accordion .accordion-item .accordion-button {
+	margin: 0px 8px 0px 0;
+	border-radius: 8px;
+	padding: 36px 24px 10px 24px;
+}
+.about .tab-content .accordion .accordion-item .accordion-button::after {
+	background-image: none;
+	transition: all 0.5s ease;
+}
+.about .tab-content .accordion .accordion-item .accordion-button h6 {
+	margin-bottom: 0;
+	position: relative;
+	padding-left: 40px;
+	font-size: 18px;
+}
+.about .tab-content .accordion .accordion-item .accordion-button h6 span {
+	position: absolute;
+	font-size: 44px;
+	top: -27px;
+	left: 0;
+}
+.about .tab-content .accordion .accordion-item .accordion-button:focus {
+	box-shadow: none;
+}
+.about .tab-content .accordion .accordion-item .accordion-body {
+	padding: 12px 58px 8px 66px;
+}
+.about .tab-content .accordion .accordion-button:not(.collapsed) {
+	color: #ff805d;
+	background-color: transparent;
+	box-shadow: none;
+}
+.about .tab-content .accordion .accordion-button:not(.collapsed) h6 {
+	font-weight: 600;
+}
+.about .tab-content .accordion .accordion-button:not(.collapsed) h6 span {
+	opacity: 1;
+	color: #ff805d;
+}
+.about .tab-content .accordion .accordion-button:after {
+	content: '󰍴';
+	font-family: 'Material Design Icons';
+	color: #ff805d;
+	margin-top: -20px;
+}
+.about .tab-content .accordion .accordion-button.collapsed:after {
+	content: '󰐕';
+	font-family: 'Material Design Icons';
+	color: #252d31;
+	margin-top: -20px;
+}
+.about .tab-content .about-heading {
+	position: relative;
+	margin-bottom: 14px;
+	padding-left: 22px;
+}
+.about .tab-content .about-heading::before {
+	content: '󰄯';
+	position: absolute;
+	width: 10px;
+	font-family: 'Material Design Icons';
+	font-size: 14px;
+	color: #ff805d;
+	left: 0;
+	top: 6px;
+	transition: all 0.7s ease;
+}
+.about .tab-content .about-heading::after {
+	content: '';
+	position: absolute;
+	width: 19%;
+	height: 2px;
+	background: #ff805d;
+	bottom: -2px;
+	left: 10px;
+}
+
+/* .bg-single-home,
 .aboutme {
+	padding-top: 36px;
+	padding-bottom: 100px;
+} */
+.bg-single-home{
 	padding-top: 36px;
 	padding-bottom: 100px;
 }
 @media (max-width: 768px) {
-	.bg-single-home,
+	/* .bg-single-home,
 	.aboutme {
+		padding: 100px 0 100px;
+	} */
+	.bg-single-home {
 		padding: 100px 0 100px;
 	}
 }
+
+/* --------------------------- END ABOUT---------------------------  */
 .bg-hero {
 	padding-top: 36px;
 	padding-bottom: 100px;
