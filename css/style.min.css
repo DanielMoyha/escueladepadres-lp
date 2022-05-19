@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
 :root {
+	/*CÓDIGOS COLORES:
+	AZUL: #203C7D
+	AMARILLO: #F0EA3E
+	
+	PERRYYYYN*/
 	--btn-primary: #ff5714;
 	--border-btn-primary: #ff5714;
 }
