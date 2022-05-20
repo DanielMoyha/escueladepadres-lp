@@ -16,6 +16,11 @@ body {
 	font-size: 15px;
 	color: #24272c;
 }
+
+/*Dandole color al logo de tik tok*/
+#tiktok{
+    fill: white; 
+  }
 h1,
 h2,
 h3,
@@ -1572,6 +1577,10 @@ button:not(:disabled) {
 .avatar.avatar-ex-sm {
 	max-height: 25px;
 }
+.avatar.avatar-ex-smi {
+	max-height: 95px;
+}
+
 .avatar.avatar-ex-small {
 	height: 36px;
 	width: 36px;
