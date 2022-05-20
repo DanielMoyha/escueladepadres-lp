@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;500;600;700&display=swap');
 
 :root {
-	--color-primary: #ff5714;
+	/* --color-primary: #ff5714; */
+	--color-primary: #e0e413;
 	--color-black: #2c2424;
 	--color-selection: #393a2f;
 	--color-white: #fff;
@@ -15,9 +16,13 @@ body {
 }
 
 /*Dandole color al logo de tik tok*/
-#tiktok{
+#tiktok {
     fill: white;
-  }
+}
+#tiktok-dark {
+	fill: var(--color-black);
+}
+
 h1,
 h2,
 h3,
