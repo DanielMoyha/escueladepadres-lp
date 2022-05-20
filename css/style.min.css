@@ -3,6 +3,8 @@
 :root {
 	/* --color-primary: #ff5714; */
 	--color-primary: #e0e413;
+	--color-primary-border: #dcdf29;
+	--color-primary-dark: #bdc007;
 	--color-black: #2c2424;
 	--color-selection: #393a2f;
 	--color-white: #fff;
@@ -438,7 +440,7 @@ a.text-info:focus {
 	color: #4dc4ff !important;
 }
 .bg-danger {
-	background-color: #ee2f20 !important;
+	background-color: var(--color-primary) !important;
 }
 .bg-soft-danger {
 	background-color: rgba(238, 47, 32, 0.05) !important;
@@ -448,7 +450,7 @@ a.text-info:focus {
 	background-color: rgba(238, 47, 32, 0.8);
 }
 .text-danger {
-	color: #ee2f20 !important;
+	color: var(--color-primary) !important;
 }
 a.text-danger:hover,
 a.text-danger:focus {
@@ -582,7 +584,7 @@ video:focus {
 	border-color: #6cf !important;
 }
 .border-danger {
-	border-color: #ee2f20 !important;
+	border-color: var(--color-primary) !important;
 }
 .border-dark {
 	border-color: #24272c !important;
@@ -782,8 +784,8 @@ small {
 .btn-primary:active,
 .btn-primary.active,
 .btn-primary.focus {
-	background-color: #e04000 !important;
-	border-color: #e04000 !important;
+	background-color: var(--color-primary-dark) !important;
+	border-color: var(--color-primary-dark) !important;
 	color: var(--color-white) !important;
 }
 .btn-soft-primary {
@@ -1144,8 +1146,8 @@ small {
 	background-color: #6cf !important;
 }
 .btn-danger {
-	background-color: #ee2f20 !important;
-	border: 1px solid #ee2f20 !important;
+	background-color: var(--color-primary) !important;
+	border: 1px solid var(--color-primary) !important;
 	color: var(--color-white) !important;
 	box-shadow: 0 3px 5px 0 rgba(238, 47, 32, 0.1);
 }
@@ -1161,7 +1163,7 @@ small {
 .btn-soft-danger {
 	background-color: rgba(238, 47, 32, 0.1) !important;
 	border: 1px solid rgba(238, 47, 32, 0.1) !important;
-	color: #ee2f20 !important;
+	color: var(--color-primary) !important;
 	box-shadow: 0 3px 5px 0 rgba(238, 47, 32, 0.1);
 }
 .btn-soft-danger:hover,
@@ -1169,13 +1171,13 @@ small {
 .btn-soft-danger:active,
 .btn-soft-danger.active,
 .btn-soft-danger.focus {
-	background-color: #ee2f20 !important;
-	border-color: #ee2f20 !important;
+	background-color: var(--color-primary) !important;
+	border-color: var(--color-primary) !important;
 	color: var(--color-white) !important;
 }
 .btn-outline-danger {
-	border: 1px solid #ee2f20;
-	color: #ee2f20;
+	border: 1px solid var(--color-primary);
+	color: var(--color-primary);
 	background-color: transparent;
 }
 .btn-outline-danger:hover,
@@ -1184,8 +1186,8 @@ small {
 .btn-outline-danger.active,
 .btn-outline-danger.focus,
 .btn-outline-danger:not(:disabled):not(.disabled):active {
-	background-color: #ee2f20;
-	border-color: #ee2f20;
+	background-color: var(--color-primary);
+	border-color: var(--color-primary);
 	color: var(--color-white) !important;
 	box-shadow: 0 3px 5px 0 rgba(238, 47, 32, 0.1);
 }
@@ -1200,10 +1202,10 @@ small {
 .btn-link.danger.active,
 .btn-link.danger.focus,
 .btn-link.danger:not(:disabled):not(.disabled):active {
-	color: #ee2f20 !important;
+	color: var(--color-primary) !important;
 }
 .btn-link.danger:after {
-	background-color: #ee2f20 !important;
+	background-color: var(--color-primary) !important;
 }
 .btn-dark {
 	background-color: #24272c !important;
@@ -2084,7 +2086,7 @@ button:not(:disabled) {
 }
 .about .about-box .card-body .avatar-title i {
 	font-size: 38px;
-	color: #ff805d;
+	color: var(--color-primary);
 }
 @media (max-width: 768px) {
 	.about .text-center {
@@ -2113,15 +2115,15 @@ button:not(:disabled) {
 }
 .about .nav.nav-tabs .nav-item .nav-link.active,
 .about .nav.nav-tabs .nav-item .nav-link :focus {
-	border: 2px solid rgba(255, 128, 93, 0.8);
-	color: #ff805d;
+	border: 2px solid var(--color-primary-border);
+	color: var(--color-primary);
 	box-shadow: rgba(37, 45, 49, 0.27) 0px 3px 8px;
 	transition: all 0.9s ease 0s;
 	background: transparent;
 }
 .about .nav.nav-tabs .nav-item .nav-link:hover {
-	border: 2px solid rgba(255, 128, 93, 0.8);
-	color: #ff805d;
+	border: 2px solid var(--color-primary-border);
+	color: var(--color-primary);
 }
 .about .tab-content {
 	padding-top: 1rem;
@@ -2159,7 +2161,7 @@ button:not(:disabled) {
 	padding: 12px 58px 8px 66px;
 }
 .about .tab-content .accordion .accordion-button:not(.collapsed) {
-	color: #ff805d;
+	color: var(--color-primary);
 	background-color: transparent;
 	box-shadow: none;
 }
@@ -2168,12 +2170,12 @@ button:not(:disabled) {
 }
 .about .tab-content .accordion .accordion-button:not(.collapsed) h6 span {
 	opacity: 1;
-	color: #ff805d;
+	color: var(--color-primary);
 }
 .about .tab-content .accordion .accordion-button:after {
 	content: '󰍴';
 	font-family: 'Material Design Icons';
-	color: #ff805d;
+	color: var(--color-primary);
 	margin-top: -20px;
 }
 .about .tab-content .accordion .accordion-button.collapsed:after {
@@ -2193,7 +2195,7 @@ button:not(:disabled) {
 	width: 10px;
 	font-family: 'Material Design Icons';
 	font-size: 14px;
-	color: #ff805d;
+	color: var(--color-primary);
 	left: 0;
 	top: 6px;
 	transition: all 0.7s ease;
@@ -2203,7 +2205,7 @@ button:not(:disabled) {
 	position: absolute;
 	width: 19%;
 	height: 2px;
-	background: #ff805d;
+	background: var(--color-primary);
 	bottom: -2px;
 	left: 10px;
 }
@@ -2268,7 +2270,7 @@ button:not(:disabled) {
 }
 .contact .contact-box .card-body .avatar-title i {
 	font-size: 38px;
-	color: #ff805d;
+	color: var(--color-primary);
 }
 @media (max-width: 768px) {
 	.contact .text-center {
@@ -2297,15 +2299,15 @@ button:not(:disabled) {
 }
 .contact .nav.nav-tabs .nav-item .nav-link.active,
 .contact .nav.nav-tabs .nav-item .nav-link :focus {
-	border: 2px solid rgba(255, 128, 93, 0.8);
-	color: #ff805d;
+	border: 2px solid var(--color-primary-border);
+	color: var(--color-primary);
 	box-shadow: rgba(37, 45, 49, 0.27) 0px 3px 8px;
 	transition: all 0.9s ease 0s;
 	background: transparent;
 }
 .contact .nav.nav-tabs .nav-item .nav-link:hover {
-	border: 2px solid rgba(255, 128, 93, 0.8);
-	color: #ff805d;
+	border: 2px solid var(--color-primary-border);
+	color: var(--color-primary);
 }
 .contact .tab-content {
 	padding-top: 1rem;
@@ -2343,7 +2345,7 @@ button:not(:disabled) {
 	padding: 12px 58px 8px 66px;
 }
 .contact .tab-content .accordion .accordion-button:not(.collapsed) {
-	color: #ff805d;
+	color: var(--color-primary);
 	background-color: transparent;
 	box-shadow: none;
 }
@@ -2352,12 +2354,12 @@ button:not(:disabled) {
 }
 .contact .tab-content .accordion .accordion-button:not(.collapsed) h6 span {
 	opacity: 1;
-	color: #ff805d;
+	color: var(--color-primary);
 }
 .contact .tab-content .accordion .accordion-button:after {
 	content: '󰍴';
 	font-family: 'Material Design Icons';
-	color: #ff805d;
+	color: var(--color-primary);
 	margin-top: -20px;
 }
 .contact .tab-content .accordion .accordion-button.collapsed:after {
@@ -2377,7 +2379,7 @@ button:not(:disabled) {
 	width: 10px;
 	font-family: 'Material Design Icons';
 	font-size: 14px;
-	color: #ff805d;
+	color: var(--color-primary);
 	left: 0;
 	top: 6px;
 	transition: all 0.7s ease;
@@ -2387,7 +2389,7 @@ button:not(:disabled) {
 	position: absolute;
 	width: 19%;
 	height: 2px;
-	background: #ff805d;
+	background: var(--color-primary);
 	bottom: -2px;
 	left: 10px;
 }
@@ -2551,7 +2553,7 @@ button:not(:disabled) {
 }
 .blog.blog-danger .title:hover,
 .blog.blog-danger .link:hover {
-	color: #ee2f20 !important;
+	color: var(--color-primary) !important;
 }
 .blog.blog-dark .title:hover,
 .blog.blog-dark .link:hover {
@@ -2613,10 +2615,10 @@ button:not(:disabled) {
 }
 .features.feature-danger .icons i {
 	background: rgba(238, 47, 32, 0.1);
-	color: #ee2f20;
+	color: var(--color-primary);
 }
 .features.feature-danger .title:hover {
-	color: #ee2f20 !important;
+	color: var(--color-primary) !important;
 }
 .features.feature-dark .icons i {
 	background: rgba(36, 39, 44, 0.1);
@@ -2776,8 +2778,8 @@ button:not(:disabled) {
 .team.team-primary .btn:active,
 .team.team-primary .btn.active,
 .team.team-primary .btn.focus {
-	background-color: #e04000 !important;
-	border-color: #e04000 !important;
+	background-color: var(--color-primary-dark) !important;
+	border-color: var(--color-primary-dark) !important;
 	color: var(--color-white) !important;
 }
 .team.team-blue .title:hover {
@@ -2871,11 +2873,11 @@ button:not(:disabled) {
 	color: var(--color-white) !important;
 }
 .team.team-danger .title:hover {
-	color: #ee2f20 !important;
+	color: var(--color-primary) !important;
 }
 .team.team-danger .btn {
-	background-color: #ee2f20 !important;
-	border: 1px solid #ee2f20 !important;
+	background-color: var(--color-primary) !important;
+	border: 1px solid var(--color-primary) !important;
 	color: var(--color-white) !important;
 	box-shadow: 0 3px 5px 0 rgba(238, 47, 32, 0.1);
 }
@@ -3003,8 +3005,8 @@ button:not(:disabled) {
 .project.project-primary .btn:active,
 .project.project-primary .btn.active,
 .project.project-primary .btn.focus {
-	background-color: #e04000 !important;
-	border-color: #e04000 !important;
+	background-color: var(--color-primary-dark) !important;
+	border-color: var(--color-primary-dark) !important;
 	color: var(--color-white) !important;
 }
 .project.project-blue .title:hover {
@@ -3098,11 +3100,11 @@ button:not(:disabled) {
 	color: var(--color-white) !important;
 }
 .project.project-danger .title:hover {
-	color: #ee2f20 !important;
+	color: var(--color-primary) !important;
 }
 .project.project-danger .btn {
-	background-color: #ee2f20 !important;
-	border: 1px solid #ee2f20 !important;
+	background-color: var(--color-primary) !important;
+	border: 1px solid var(--color-primary) !important;
 	color: var(--color-white) !important;
 	box-shadow: 0 3px 5px 0 rgba(238, 47, 32, 0.1);
 }
@@ -3250,7 +3252,7 @@ button:not(:disabled) {
 .error {
 	margin: 8px 0px;
 	display: none;
-	color: #ee2f20;
+	color: var(--color-primary);
 }
 #ajaxsuccess {
 	font-size: 16px;
@@ -3269,7 +3271,7 @@ button:not(:disabled) {
 .error_message {
 	background-color: rgba(238, 47, 32, 0.1) !important;
 	border: 2px solid rgba(238, 47, 32, 0.1) !important;
-	color: #ee2f20 !important;
+	color: #ee2f23;
 	font-size: 14px;
 }
 .contact-loader {
