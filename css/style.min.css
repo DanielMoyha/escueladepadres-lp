@@ -2228,6 +2228,192 @@ button:not(:disabled) {
 }
 
 /* --------------------------- END ABOUT---------------------------  */
+
+/* --------------------------- CONTACT ---------------------------  */
+
+.contact .text-center {
+	margin-bottom: 100px;
+}
+/* .about .img-bg {
+	position: relative;
+}
+.about .img-bg::before {
+	content: '';
+	position: absolute;
+	top: -60px;
+	right: 40%;
+	left: -80px;
+	bottom: -60px;
+	border-radius: 20px;
+	background-color: rgba(255, 128, 93, 0.2);
+}
+.about .about-img {
+	position: relative;
+	border-radius: 20px;
+} */
+.contact .contact-title {
+	font-size: 26px;
+}
+.contact .contact-box {
+	border: none;
+}
+.contact .contact-box .card-body {
+	border-radius: 10px;
+	background-color: rgba(255, 128, 93, 0.06);
+}
+.contact .contact-box .card-body .avatar-title {
+	border-radius: 10px;
+	align-items: center;
+	background-color: #ffe6df;
+}
+.contact .contact-box .card-body .avatar-title i {
+	font-size: 38px;
+	color: #ff805d;
+}
+@media (max-width: 768px) {
+	.contact .text-center {
+		margin-bottom: 30px;
+	}
+	/* .contact .img-bg {
+		margin-bottom: 40px;
+	}
+	.contact .img-bg::before {
+		display: none;
+	} */
+}
+.contact .tab-pane .contact-img img {
+	border-radius: 20px;
+}
+.contact .nav.nav-tabs {
+	border-bottom: none;
+}
+.contact .nav.nav-tabs .nav-item {
+	padding-right: 10px;
+}
+.contact .nav.nav-tabs .nav-item .nav-link {
+	color: #252d31;
+	padding: 18px 0;
+	border-radius: 8px;
+}
+.contact .nav.nav-tabs .nav-item .nav-link.active,
+.contact .nav.nav-tabs .nav-item .nav-link :focus {
+	border: 2px solid rgba(255, 128, 93, 0.8);
+	color: #ff805d;
+	box-shadow: rgba(37, 45, 49, 0.27) 0px 3px 8px;
+	transition: all 0.9s ease 0s;
+	background: transparent;
+}
+.contact .nav.nav-tabs .nav-item .nav-link:hover {
+	border: 2px solid rgba(255, 128, 93, 0.8);
+	color: #ff805d;
+}
+.contact .tab-content {
+	padding-top: 1rem;
+}
+.contact .tab-content .accordion .accordion-item {
+	border-radius: 8px;
+	margin: 19px 0 0 0;
+	border: 1px solid #e0e0e0;
+}
+.contact .tab-content .accordion .accordion-item .accordion-button {
+	margin: 0px 8px 0px 0;
+	border-radius: 8px;
+	padding: 36px 24px 10px 24px;
+}
+.contact .tab-content .accordion .accordion-item .accordion-button::after {
+	background-image: none;
+	transition: all 0.5s ease;
+}
+.contact .tab-content .accordion .accordion-item .accordion-button h6 {
+	margin-bottom: 0;
+	position: relative;
+	padding-left: 40px;
+	font-size: 18px;
+}
+.contact .tab-content .accordion .accordion-item .accordion-button h6 span {
+	position: absolute;
+	font-size: 44px;
+	top: -27px;
+	left: 0;
+}
+.contact .tab-content .accordion .accordion-item .accordion-button:focus {
+	box-shadow: none;
+}
+.contact .tab-content .accordion .accordion-item .accordion-body {
+	padding: 12px 58px 8px 66px;
+}
+.contact .tab-content .accordion .accordion-button:not(.collapsed) {
+	color: #ff805d;
+	background-color: transparent;
+	box-shadow: none;
+}
+.contact .tab-content .accordion .accordion-button:not(.collapsed) h6 {
+	font-weight: 600;
+}
+.contact .tab-content .accordion .accordion-button:not(.collapsed) h6 span {
+	opacity: 1;
+	color: #ff805d;
+}
+.contact .tab-content .accordion .accordion-button:after {
+	content: '󰍴';
+	font-family: 'Material Design Icons';
+	color: #ff805d;
+	margin-top: -20px;
+}
+.contact .tab-content .accordion .accordion-button.collapsed:after {
+	content: '󰐕';
+	font-family: 'Material Design Icons';
+	color: #252d31;
+	margin-top: -20px;
+}
+.contact .tab-content .about-heading {
+	position: relative;
+	margin-bottom: 14px;
+	padding-left: 22px;
+}
+.contact .tab-content .about-heading::before {
+	content: '󰄯';
+	position: absolute;
+	width: 10px;
+	font-family: 'Material Design Icons';
+	font-size: 14px;
+	color: #ff805d;
+	left: 0;
+	top: 6px;
+	transition: all 0.7s ease;
+}
+.contact .tab-content .about-heading::after {
+	content: '';
+	position: absolute;
+	width: 19%;
+	height: 2px;
+	background: #ff805d;
+	bottom: -2px;
+	left: 10px;
+}
+
+/* .bg-single-home,
+.aboutme {
+	padding-top: 36px;
+	padding-bottom: 100px;
+} */
+.bg-single-home{
+	padding-top: 36px;
+	padding-bottom: 100px;
+}
+@media (max-width: 768px) {
+	/* .bg-single-home,
+	.aboutme {
+		padding: 100px 0 100px;
+	} */
+	.bg-single-home {
+		padding: 100px 0 100px;
+	}
+}
+
+/* --------------------------- END CONTACT---------------------------  */
+
+
 .bg-hero {
 	padding-top: 36px;
 	padding-bottom: 100px;
