@@ -1068,10 +1068,10 @@
 	<!-- End Blog -->
 
 	<!-- Start Contact -->
-	<section class="section bg-light" id="contact">
+	<section class="section contact bg-light" id="contact">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col">
+				<div class="col-lg-12">
 					<div class="section-title text-center mb-4 pb-2">
 						<h6 class="text-primary fw-semibold text-uppercase">Contáctanos</h6>
 						<h4 class="title mb-3">Ponte en contacto</h4>
@@ -1080,97 +1080,177 @@
 						</p>
 					</div>
 				</div>
+				<!--Menú de navegación CONTACTO-->
+				<div class="col-lg-8">
+					<ul class="nav nav-tabs nav-tabs-custom nav-justified justify-content-center faq-tab-box"
+						id="pills-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<a href="#form-contact" class="nav-link" id="pills-genarel-tab" data-bs-toggle="pill"
+								role="tab" aria-controls="pills-genarel" aria-selected="true">
+								<h5 class="mb-0">Contacto</h5>
+							</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a href="#address" class="nav-link active" id="pills-privacy_policy-tab"
+								data-bs-toggle="pill" role="tab" aria-controls="pills-privacy_policy"
+								aria-selected="false">
+								<h5 class="mb-0">Ubicación</h5>
+							</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a href="#other" class="nav-link" id="pills-teachers-tab" data-bs-toggle="pill"
+								role="tab" aria-controls="pills-pricing_plan" aria-selected="false">
+								<h5 class="mb-0">Otro</h5>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!--CONTACTO - UBICACIÓN - OTRO-->
+				<div class="col-lg-12">
+					<div class="tab-content" id="pills-tabContent">
+						<!--FORMULARIO CONTACTO-->
+						<div class="tab-pane fade" id="form-contact" role="tabpanel"
+							aria-labelledby="pills-genarel-tab">
+							<div class="row align-items-center">
+								<div class="col-lg-8 col-md-6 mt-4 pt-2">
+									<div class="p-4 rounded shadow bg-white">
+										<form method="post" name="myForm" onsubmit="return validateForm()">
+											<p class="mb-0" id="error-msg"></p>
+											<div id="simple-msg"></div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="mb-4">
+														<input name="name" id="name" type="text" class="form-control"
+															placeholder="Nombre :" />
+													</div>
+												</div>
+				
+												<div class="col-md-6">
+													<div class="mb-4">
+														<input name="email" id="email" type="email" class="form-control"
+															placeholder="Correo :" />
+													</div>
+												</div>
+												<!--end col-->
+				
+												<div class="col-12">
+													<div class="mb-4">
+														<input name="subject" id="subject" class="form-control"
+															placeholder="Tema :" />
+													</div>
+												</div>
+												<!--end col-->
+				
+												<div class="col-12">
+													<div class="mb-4">
+														<textarea name="comments" id="comments" rows="4" class="form-control"
+															placeholder="Mensaje :"></textarea>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-12">
+													<button type="submit" id="submit" name="send" class="btn btn-primary">Enviar</button>
+												</div>
+												<!--end col-->
+											</div>
+											<!--end row-->
+										</form>
+									</div>
+								</div>
+								<!--end col-->
+				
+								<div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+									<div class="ms-lg-4">
+										<div class="d-flex">
+											<div class="icons text-center mx-auto">
+												<i class="uil uil-phone d-block rounded h4 mb-0"></i>
+											</div>
+				
+											<div class="flex-1 ms-3">
+												<h5 class="mb-2">Teléfono</h5>
+												<a href="tel:+152534-468-854" class="text-muted">+591 71577703</a>
+											</div>
+										</div>
+				
+										<div class="d-flex mt-4">
+											<div class="icons text-center mx-auto">
+												<i class="uil uil-envelope d-block rounded h4 mb-0"></i>
+											</div>
+				
+											<div class="flex-1 ms-3">
+												<h5 class="mb-2">Correo</h5>
+												<a href="escueladepadres_filiallpz@hotmail.com" class="text-muted">escueladepadres_filiallpz@hotmail.com</a>
+											</div>
+										</div>
+				
+										<div class="d-flex mt-4">
+											<div class="icons text-center mx-auto">
+												<i class="uil uil-map-marker d-block rounded h4 mb-0"></i>
+											</div>
+				
+											<div class="flex-1 ms-3">
+												<h5 class="mb-2">Ubicación</h5>
+												<p class="text-muted mb-2">Salones Parroquia María Auxiliadora (El Prado)</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--end col-->
+							</div>
+							
+						</div>
+						
+						<!--UBICACIÓN-->
+						<div class="tab-pane fade active show" id="address" role="tabpanel"
+							aria-labelledby="pills-privacy_policy-tab">
+							<div class="row justify-content-between align-items-center">
+								
+									<div class="col-lg-12">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61207.25234793007!2d-68.19715006874998!3d-16.503198899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f207ab608cd63%3A0xc844165bf7222fc6!2sIglesia%20Maria%20Auxiliadora!5e0!3m2!1ses-419!2sbo!4v1653078041127!5m2!1ses-419!2sbo" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+
+							</div>
+						</div>
+						<!-- OTRO -->
+						<div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="pills-tab">
+							<div class="row justify-content-between align-items-center">
+								<div class="col-lg-5">
+									<div class="about-img">
+										<img src="images/contact/contact.png" class="img-fluid" alt="" />
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<h4 class="about-heading">CONTACTO WHATSAPP</h4>
+									<p class="text-muted">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quod hic molestias
+										cupiditate sapiente amet aperiam voluptatum, dolor atque saepe praesentium ab
+										incidunt, id cumque quas, quia ad! Quos error ad et asperiores magni consectetur
+										praesentium ipsum sunt tenetur, modi, necessitatibus quae rerum fuga aspernatur
+										beatae dignissimos. Error id cupiditate, exercitationem ad ea iure quam?
+									</p>
+									<p class="text-muted">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ullam
+										temporibus voluptatum commodi tempore vitae ea ad soluta tempora nesciunt.
+									</p>
+
+									<a href="https://wa.me/59170192032?text=Me%20gutaria%20tener%20más%20información%20de%20la%20Institución." class="btn btn-primary">ENVIAR MENSAJE</a>
+
+									<!-- <div>
+											<a class="text-primary" href="#">Learn More.</a>
+										</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 				<!--end col-->
 			</div>
 			<!--end row-->
-
-			<div class="row align-items-center">
-				<div class="col-lg-8 col-md-6 mt-4 pt-2">
-					<div class="p-4 rounded shadow bg-white">
-						<form method="post" name="myForm" onsubmit="return validateForm()">
-							<p class="mb-0" id="error-msg"></p>
-							<div id="simple-msg"></div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="mb-4">
-										<input name="name" id="name" type="text" class="form-control"
-											placeholder="Nombre :" />
-									</div>
-								</div>
-
-								<div class="col-md-6">
-									<div class="mb-4">
-										<input name="email" id="email" type="email" class="form-control"
-											placeholder="Correo :" />
-									</div>
-								</div>
-								<!--end col-->
-
-								<div class="col-12">
-									<div class="mb-4">
-										<input name="subject" id="subject" class="form-control"
-											placeholder="Tema :" />
-									</div>
-								</div>
-								<!--end col-->
-
-								<div class="col-12">
-									<div class="mb-4">
-										<textarea name="comments" id="comments" rows="4" class="form-control"
-											placeholder="Mensaje :"></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-12">
-									<button type="submit" id="submit" name="send" class="btn btn-primary">Enviar</button>
-								</div>
-								<!--end col-->
-							</div>
-							<!--end row-->
-						</form>
-					</div>
-				</div>
-				<!--end col-->
-
-				<div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-					<div class="ms-lg-4">
-						<div class="d-flex">
-							<div class="icons text-center mx-auto">
-								<i class="uil uil-phone d-block rounded h4 mb-0"></i>
-							</div>
-
-							<div class="flex-1 ms-3">
-								<h5 class="mb-2">Teléfono</h5>
-								<a href="tel:+152534-468-854" class="text-muted">+591 71577703</a>
-							</div>
-						</div>
-
-						<div class="d-flex mt-4">
-							<div class="icons text-center mx-auto">
-								<i class="uil uil-envelope d-block rounded h4 mb-0"></i>
-							</div>
-
-							<div class="flex-1 ms-3">
-								<h5 class="mb-2">Correo</h5>
-								<a href="escueladepadres_filiallpz@hotmail.com" class="text-muted">escueladepadres_filiallpz@hotmail.com</a>
-							</div>
-						</div>
-
-						<div class="d-flex mt-4">
-							<div class="icons text-center mx-auto">
-								<i class="uil uil-map-marker d-block rounded h4 mb-0"></i>
-							</div>
-
-							<div class="flex-1 ms-3">
-								<h5 class="mb-2">Ubicación</h5>
-								<p class="text-muted mb-2">Salones Parroquia María Auxiliadora (El Prado)</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--end col-->
-			</div>
+			
+			
 			<!--end row-->
 		</div>
 		<!--end container-->
@@ -1228,12 +1308,15 @@
 									</svg></a>
 							</li>
 							<li class="list-inline-item mb-0">
-								<a href="https://www.tiktok.com/@escueladdepadres"  class="rounded"><svg  xmlns="http://www.w3.org/2000/svg" width="24"
+								<a href="https://www.tiktok.com/@escueladdepadres"  class="rounded">
+									<!--SVG TIK TOK-->
+									<svg  xmlns="http://www.w3.org/2000/svg" width="24"
 									height="24" viewBox="0 0 512 512" fill="none" stroke="currentColor"
 									stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-									class="feather feather-instagram fea icon-sm fea-social">
+									class="feather fea icon-sm fea-social">
 									<path id="tiktok"  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path>
-								</svg></a>
+								</svg>
+							</a>
 							</li>
 
 						</ul>
