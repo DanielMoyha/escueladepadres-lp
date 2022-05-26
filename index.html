@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,7 +14,7 @@
 
 	<!-- favicon -->
 	<!-- <link href="images/favicon.ico" rel="shortcut icon" /> -->
-	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="images/logos/main-logo.png" type="image/x-icon" />
 
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
@@ -28,15 +27,16 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80">
+
 	<!-- START NAVBAR -->
 	<nav id="navbar" class="navbar navbar-expand-lg nav-light fixed-top sticky">
 		<div class="container">
 			<a class="navbar-brand" href="">
 				<span class="logo-light-mode">
-					<img src="images/logo-dark1.png" class="l-light" alt="" height="110px" width="100px"/>
-					<img src="images/logo-light1.png" class="l-dark" alt="" height="85px"/>
+					<img src="images/logos/main-logo.png" class="l-light nav-logo" alt="main logo"/>
+					<img src="images/logos/main-logo.png" class="l-dark nav-logo" alt=""/>
 				</span>
-				<img src="images/logo-light1.png" class="logo-dark-mode" alt="" height="100px"/>
+				<img src="images/logos/main-logo.png" class="logo-dark-mode nav-logo" alt=""/>
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -53,7 +53,7 @@
 						<a class="nav-link" href="#about">Acerca de</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#service">Servicios</a>
+						<a class="nav-link" href="#programs">Programas</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#project">Proyectos</a>
@@ -128,24 +128,22 @@
 				<div class="col-12">
 					<div class="title-heading">
 						<h4 class="heading text-white mb-4 position-relative">
-							Escuela de Padres de Bolivia <br />Slogan
+							Escuela de Padres de Bolivia <br />Somos
 							<span class="typewrite position-relative text-type-element" data-period="2000"
-								data-type='[ "palabras clave", "palabras clave", "palabras clave" ]'></span>
+								data-type='[ "aaaa", "eee", "iii", "ooo" ]'></span>
 						</h4>
-						<p class="text-white-50 mb-0 para-desc">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet accusamus ut numquam incidunt
-							aspernatur quae repellendus doloribus doloremque laudantium debitis.
+						<p class="text-white mb-0 para-desc">
+							<b>EPB</b>, es una institución cristiana y autónoma, de carácter esencialmente educativo, constituida por padres de familia y educadores que tiene como sede de sus funciones la ciudad de Santa Cruz de la Sierra desde <b>1975</b>.
 						</p>
 
 						<div class="mt-4 pt-2">
-							<a href="" class="btn btn-primary me-2">Ver más</a>
+							<a href="#about" class="btn btn-primary me-2">Ver más</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--end section-->
 	<!-- End Hero -->
 
 	<!-- Start About -->
@@ -154,9 +152,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-12">
 					<div class="text-center mb-5">
-						<h3 class="heading"><span class="text-primary">Acerca de</span> Nosotros</h3>
-						<p class="text-muted">Descripción Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Beatae, ullam magni ipsa eos facilis vel eveniet aperiam suscipit hic.</p>
+						<h2 class="heading"><span class="text-primary">Acerca de</span> Nosotros</h2>
+						<!-- <p class="text-muted">Descripción Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ullam magni ipsa eos facilis vel eveniet aperiam suscipit hic.</p> -->
 					</div>
 				</div>
 
@@ -164,22 +161,22 @@
 					<ul class="nav nav-tabs nav-tabs-custom nav-justified justify-content-center faq-tab-box"
 						id="pills-tab" role="tablist">
 						<li class="nav-item" role="presentation">
-							<a href="#pills-genarel" class="nav-link" id="pills-genarel-tab" data-bs-toggle="pill"
-								role="tab" aria-controls="pills-genarel" aria-selected="true">
-								<h5 class="mb-0">Historia</h5>
+							<a href="#objective" class="nav-link" id="objective-tab" data-bs-toggle="pill"
+								role="tab" aria-controls="objective" aria-selected="true">
+								<h5 class="mb-0">Objetivo</h5>
 							</a>
 						</li>
 						<li class="nav-item" role="presentation">
-							<a href="#pills-privacy_policy" class="nav-link active" id="pills-privacy_policy-tab"
-								data-bs-toggle="pill" role="tab" aria-controls="pills-privacy_policy"
+							<a href="#mission" class="nav-link active" id="mission-tab"
+								data-bs-toggle="pill" role="tab" aria-controls="mission"
 								aria-selected="false">
-								<h5 class="mb-0">Visión</h5>
+								<h5 class="mb-0">Misión</h5>
 							</a>
 						</li>
 						<li class="nav-item" role="presentation">
-							<a href="#pills-pricing_plan" class="nav-link" id="pills-teachers-tab" data-bs-toggle="pill"
-								role="tab" aria-controls="pills-pricing_plan" aria-selected="false">
-								<h5 class="mb-0">Misión</h5>
+							<a href="#view" class="nav-link" id="view-tab" data-bs-toggle="pill"
+								role="tab" aria-controls="view" aria-selected="false">
+								<h5 class="mb-0">Visión</h5>
 							</a>
 						</li>
 					</ul>
@@ -187,8 +184,8 @@
 
 				<div class="col-lg-12">
 					<div class="tab-content" id="pills-tabContent">
-						<div class="tab-pane fade" id="pills-genarel" role="tabpanel"
-							aria-labelledby="pills-genarel-tab">
+						<div class="tab-pane fade" id="objective" role="tabpanel"
+							aria-labelledby="objective-tab">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-lg-5">
 									<div class="about-img">
@@ -196,31 +193,15 @@
 									</div>
 								</div>
 								<div class="col-lg-6">
-									<h4 class="about-heading">Historia</h4>
-									<p class="text-muted">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe modi quidem
-										obcaecati molestiae adipisci reprehenderit, excepturi rem labore nemo, tempora
-										consectetur. Dolores ad, dicta, modi exercitationem cupiditate, itaque
-										repellendus nostrum veritatis in laborum neque. Tenetur impedit, hic veritatis
-										officiis quam, rem porro saepe, numquam neque reprehenderit unde omnis. Tempora,
-										et.
+									<h4 class="about-heading">Objetivo</h4>
+									<p class="text-muted text-content-about">
+										Brindar a los padres, madres y/o tutores un espacio de reflexión y análisis a partir de la introspección en la estructura familiar, la etapa que atraviesa la familia y los roles de sus integrantes, con el fin de ampliar su visión y abrir las posibilidades de movimiento en aquellos aspectos que generen mayor insatisfacción personal y de relación.
 									</p>
-									<p class="text-muted">
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-										eget dolor.
-										Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-										nascetur
-										ridiculus mus.
-									</p>
-
-									<!-- <div>
-											<a class="text-primary" href="#">Learn More.</a>
-										</div> -->
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade active show" id="pills-privacy_policy" role="tabpanel"
-							aria-labelledby="pills-privacy_policy-tab">
+						<div class="tab-pane fade active show" id="mission" role="tabpanel"
+							aria-labelledby="mission-tab">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-lg-5">
 									<div class="about-img">
@@ -228,33 +209,14 @@
 									</div>
 								</div>
 								<div class="col-lg-6">
-									<h4 class="about-heading">Visión</h4>
-									<p class="text-muted">
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-										eget dolor.
-										Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-										nascetur
-										ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-										sem. Nulla
-										consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-										vulputate eget,
-										arcu.
+									<h4 class="about-heading">Misión</h4>
+									<p class="text-muted text-content-about">
+										Mejorar las condiciones de comunicación y relaciones intrafamiliares a través de propuestas de educación familiar y crecimiento humano que coadyuven a mejorar la calidad de los ciudadanos como base de toda nación próspera.
 									</p>
-									<p class="text-muted">
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-										eget dolor.
-										Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-										nascetur
-										ridiculus mus.
-									</p>
-
-									<!-- <div>
-											<a class="text-primary" href="#">Learn More.</a>
-										</div> -->
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="pills-pricing_plan" role="tabpanel" aria-labelledby="pills-tab">
+						<div class="tab-pane fade" id="view" role="tabpanel" aria-labelledby="view-tab">
 							<div class="row justify-content-between align-items-center">
 								<div class="col-lg-5">
 									<div class="about-img">
@@ -262,22 +224,10 @@
 									</div>
 								</div>
 								<div class="col-lg-6">
-									<h4 class="about-heading">Misión</h4>
-									<p class="text-muted">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quod hic molestias
-										cupiditate sapiente amet aperiam voluptatum, dolor atque saepe praesentium ab
-										incidunt, id cumque quas, quia ad! Quos error ad et asperiores magni consectetur
-										praesentium ipsum sunt tenetur, modi, necessitatibus quae rerum fuga aspernatur
-										beatae dignissimos. Error id cupiditate, exercitationem ad ea iure quam?
+									<h4 class="about-heading">Visión</h4>
+									<p class="text-muted text-content-about">
+										Reafirmar en las personas la práctica de los valores humanos concientizando al individuo sobre la importancia y responsabilidad de formar un hogar que sea terreno fértil donde crezcan ciudadanos que establezcan una nación sólida.
 									</p>
-									<p class="text-muted">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ullam
-										temporibus voluptatum commodi tempore vitae ea ad soluta tempora nesciunt.
-									</p>
-
-									<!-- <div>
-											<a class="text-primary" href="#">Learn More.</a>
-										</div> -->
 								</div>
 							</div>
 						</div>
@@ -288,8 +238,8 @@
 	</section>
 	<!-- End About -->
 
-	<!-- Start Services -->
-	<section class="section" id="service">
+	<!-- Start Programs -->
+	<section class="section" id="programs">
 		<div class="container">
 			<div class="row align-items-center mb-4 pb-2">
 				<div class="col-md-6">
@@ -527,8 +477,7 @@
 		<!-- </div> -->
 		<!-- WORK PROCESS - END-->
 	</section>
-	<!--end section-->
-	<!-- End Services -->
+	<!-- End Programs -->
 
 	<!-- Project Start -->
 	<section class="section bg-light" id="project">
@@ -704,7 +653,6 @@
 		</div>
 		<!--end container-->
 	</section>
-	<!--end section-->
 	<!-- Project End -->
 
 	<!-- CTA Start -->
@@ -730,7 +678,6 @@
 		</div>
 		<!--end container-->
 	</section>
-	<!--end section-->
 	<!-- CTA End -->
 
 	<!-- Start Team -->
@@ -944,7 +891,6 @@
 		</div>
 		<!--end container-->
 	</section>
-	<!--end section-->
 	<!-- End Team -->
 
 	<!-- Start Blog -->
@@ -1033,7 +979,6 @@
 		</div>
 		<!--end container-->
 	</section>
-	<!--end section-->
 	<!-- End Blog -->
 
 	<!-- Start Contact -->
@@ -1208,7 +1153,7 @@
 										temporibus voluptatum commodi tempore vitae ea ad soluta tempora nesciunt.
 									</p>
 
-									<a href="https://wa.me/59170192032?text=Me%20gutaria%20tener%20más%20información%20de%20la%20Institución." class="btn btn-primary">ENVIAR MENSAJE</a>
+									<a href="https://wa.me/59170192032?text=Me%20gutaria%20tener%20más%20información%20de%20la%20Institución%20PRUEBALALA." class="btn btn-primary">ENVIAR MENSAJE</a>
 
 									<!-- <div>
 											<a class="text-primary" href="#">Learn More.</a>
@@ -1228,7 +1173,6 @@
 		</div>
 		<!--end container-->
 	</section>
-	<!--end section-->
 	<!-- End Contact -->
 
 	<!-- Start Footer -->
@@ -1302,7 +1246,6 @@
 			<!--end container-->
 		</div>
 	</footer>
-	<!--end footer-->
 	<!-- End Footer -->
 
 	<!-- Back to top -->
