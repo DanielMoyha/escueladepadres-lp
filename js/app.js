@@ -26,6 +26,7 @@ function windowScroll() {
 	const navbar = document.getElementById('navbar');
 	if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
 		navbar.classList.add('nav-sticky');
+		// navbar.document.getElementByClass("navbar-list-dark").style.color = 'red';
 	} else {
 		navbar.classList.remove('nav-sticky');
 	}

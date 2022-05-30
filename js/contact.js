@@ -8,25 +8,25 @@ function validateForm() {
 	document.getElementById('error-msg').innerHTML = '';
 	if (name == '' || name == null) {
 		document.getElementById('error-msg').innerHTML =
-			"<div class='alert alert-warning error_message'>*Porfavor ingresa tu nombre*</div>";
+			"<div class='alert alert-warning error_message'>Por favor ingresa tu nombre</div>";
 		fadeIn();
 		return false;
 	}
 	if (email == '' || email == null) {
 		document.getElementById('error-msg').innerHTML =
-			"<div class='alert alert-warning error_message'>*Porfavor ingresa tu correo*</div>";
+			"<div class='alert alert-warning error_message'>Por favor ingresa tu correo</div>";
 		fadeIn();
 		return false;
 	}
 	if (subject == '' || subject == null) {
 		document.getElementById('error-msg').innerHTML =
-			"<div class='alert alert-warning error_message'>*Porfavor ingresa un tema*</div>";
+			"<div class='alert alert-warning error_message'>Por favor ingresa un tema</div>";
 		fadeIn();
 		return false;
 	}
 	if (comments == '' || comments == null) {
 		document.getElementById('error-msg').innerHTML =
-			"<div class='alert alert-warning error_message'>*Porfavor ingresa tu mensaje*</div>";
+			"<div class='alert alert-warning error_message'>Por favor ingresa tu mensaje</div>";
 		fadeIn();
 		return false;
 	}
@@ -58,3 +58,4 @@ function fadeIn() {
 		}
 	}, 200);
 }
+
