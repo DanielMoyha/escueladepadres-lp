@@ -534,6 +534,12 @@ progress {
 	max-width: 100%;
 	height: auto;
 }
+
+.img-fluid-qr {
+	max-width: 60%;
+	height: auto;
+	float: right;
+}
 .img-thumbnail {
 	padding: 0.25rem;
 	background-color: #fff;
@@ -572,6 +578,7 @@ progress {
 		max-width: 540px;
 	}
 }
+
 @media (min-width: 768px) {
 	.container,
 	.container-md,
