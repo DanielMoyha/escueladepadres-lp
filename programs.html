@@ -1,219 +1,611 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Escuela de Padres de Bolivia - Filial La Paz</title>
-	<meta name="description" content="Landing Page Escuela de Padres de Bolivia filial La Paz" />
-	<meta name="keywords"
-		content="Escuela, padres, niños, La Paz, Bolivia, psicólogos, psicólogas, formación, ayuda, orientación" />
-	<meta name="author" content="pasantes escuela de padres de Bolivia - filial La Paz" />
-	<meta name="website" content="" />
-	<meta name="email" content="email@gmail.com" />
-	<!-- <meta name="version" content="1.0.0" /> -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Escuela de Padres de Bolivia - Filial La Paz</title>
+		<meta name="description" content="Landing Page Escuela de Padres de Bolivia filial La Paz" />
+		<meta
+			name="keywords"
+			content="Escuela, padres, niños, La Paz, Bolivia, psicólogos, psicólogas, formación, ayuda, orientación"
+		/>
+		<meta name="author" content="pasantes escuela de padres de Bolivia - filial La Paz" />
+		<meta name="website" content="" />
+		<meta name="email" content="email@gmail.com" />
+		<!-- <meta name="version" content="1.0.0" /> -->
 
-	<!-- favicon -->
-	<!-- <link href="images/favicon.ico" rel="shortcut icon" /> -->
-	<link rel="shortcut icon" href="images/logos/main-logo.png" type="image/x-icon" />
+		<!-- favicon -->
+		<!-- <link href="images/favicon.ico" rel="shortcut icon" /> -->
+		<link rel="shortcut icon" href="images/logos/main-logo.png" type="image/x-icon" />
 
-	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-	<link href="css/tobii.min.css" type="text/css" rel="stylesheet" />
-	<link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-	<link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet" />
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+		<link href="css/tobii.min.css" type="text/css" rel="stylesheet" />
+		<link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+		<link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet" />
 
-	<!-- Custom  Css -->
-	<link href="css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
-</head>
+		<!-- Custom  Css -->
+		<link href="css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
+		<link rel="stylesheet/less" type="text/css" href="scss/app.scss" />
+		<link rel="stylesheet/less" type="text/css" href="scss/scroll.scss" />
+		<script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+	</head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80">
+	<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" class="scroll">
+		<!-- START NAVBAR -->
+		<nav id="navbar" class="navbar navbar-expand-lg fixed-top sticky navbar-dark">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<span class="logo-light-mode">
+						<img src="images/logos/main-logo-white.png" class="l-light nav-logo" alt="main logo" />
+						<img src="images/logos/main-logo.png" class="l-dark nav-logo" alt="" />
+					</span>
+					<img src="images/logos/main-logo.png" class="logo-dark-mode nav-logo" alt="" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<i data-feather="menu"></i>
+				</button>
 
-	<!-- START NAVBAR -->
-	<nav id="navbar" class="navbar navbar-expand-lg fixed-top sticky navbar-dark">
-		<div class="container">
-			<a class="navbar-brand" href="">
-				<span class="logo-light-mode">
-					<img src="images/logos/main-logo-white.png" class="l-light nav-logo" alt="main logo"/>
-					<img src="images/logos/main-logo.png" class="l-dark nav-logo" alt=""/>
-				</span>
-				<img src="images/logos/main-logo.png" class="logo-dark-mode nav-logo" alt=""/>
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<i data-feather="menu"></i>
-			</button>
+				<div class="collapse navbar-collapse navbar-list-dark" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navlist">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html#home">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#about">Acerca de</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#programs">Programas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#project">Proyectos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#team">Equipo</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#blog">Blogs</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#contact">Contáctanos</a>
+						</li>
+					</ul>
 
-			<div class="collapse navbar-collapse navbar-list-dark" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navlist">
-					<li class="nav-item">
-						<a class="nav-link active" href="index.html#home">Inicio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="index.html#about">Acerca de</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="index.html#programs">Programas</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="index.html#project">Proyectos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="index.html#team">Equipo</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="index.html#blog">Blogs</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="index.html#contact">Contáctanos</a>
-					</li>
-				</ul>
-
-				<ul class="list-inline menu-social mb-0 ps-lg-4 ms-2">
-					<li class="list-inline-item">
-						<a href="https://www.facebook.com/Escuela-de-Padres-Filial-La-Paz-312585152470895">
-							<span class="login-btn-primary"><span class="btn btn-sm btn-icon btn-pills btn-primary"><i
-										data-feather="facebook" class="icons"></i></span></span>
-							<span class="login-btn-light"><span class="btn btn-sm btn-icon btn-pills btn-light"><i
-										data-feather="facebook" class="icons"></i></span></span>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="#">
-							<span class="login-btn-primary"><span class="btn btn-sm btn-icon btn-pills btn-primary"><i
-										data-feather="instagram" class="icons"></i></span></span>
-							<span class="login-btn-light"><span class="btn btn-sm btn-icon btn-pills btn-light"><i
-										data-feather="instagram" class="icons"></i></span></span>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="https://www.tiktok.com/@escueladdepadres" target="_blank">
-							<span class="login-btn-primary">
-								<span class="btn btn-sm btn-icon btn-pills btn-primary">
-									<!-- <i data-feather="music" class="icons"></i> -->
-									<svg  xmlns="http://www.w3.org/2000/svg" width="24"
-										height="24" viewBox="0 0 512 512" fill="none" stroke="currentColor"
-										stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-										class="feather fea icon-sm fea-social">
-										<path id="tiktok"  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path>
-									</svg>
-								</span>
-							</span>
-							<span class="login-btn-light">
-								<span class="btn btn-sm btn-icon btn-pills btn-light">
-									<!-- <i data-feather="music" class="icons"></i> -->
-									<svg  xmlns="http://www.w3.org/2000/svg" width="24"
-										height="24" viewBox="0 0 512 512" fill="none" stroke="currentColor"
-										stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-										class="feather fea icon-sm fea-social">
-										<path id="tiktok-dark"  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path>
-									</svg>
-								</span>
-							</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<!--end collapse-->
-		</div>
-		<!--end container-->
-	</nav>
-	<!-- END NAVBAR -->
-
-    <section class="section">
-		<div class="container">
-			<br><br><br><br><br><br><br><br><br><br>
-			<h1>PROGRAMAS Y PROYECTOS</h1>
-			<h3><b>En desarrollo...</b></h3>
-            <br><br><br><br><br><br><br><br><br><br>
-        </div>
-    </section>
-
-	<!-- Start Footer -->
-	<footer class="bg-footer footer-bar">
-		<div class="footer-py-30">
-			<div class="container text-center">
-				<div class="row align-items-center">
-					<div class="col-sm-3">
-						<div class="text-sm-start">
-							<a href="#" class="logo-footer">
-								<img src="images/logo-dark2.png" height="100px" alt="" />
+					<ul class="list-inline menu-social mb-0 ps-lg-4 ms-2">
+						<li class="list-inline-item">
+							<a href="https://www.facebook.com/Escuela-de-Padres-Filial-La-Paz-312585152470895">
+								<span class="login-btn-primary"
+									><span class="btn btn-sm btn-icon btn-pills btn-primary"
+										><i data-feather="facebook" class="icons"></i></span
+								></span>
+								<span class="login-btn-light"
+									><span class="btn btn-sm btn-icon btn-pills btn-light"
+										><i data-feather="facebook" class="icons"></i></span
+								></span>
 							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#">
+								<span class="login-btn-primary"
+									><span class="btn btn-sm btn-icon btn-pills btn-primary"
+										><i data-feather="instagram" class="icons"></i></span
+								></span>
+								<span class="login-btn-light"
+									><span class="btn btn-sm btn-icon btn-pills btn-light"
+										><i data-feather="instagram" class="icons"></i></span
+								></span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="https://www.tiktok.com/@escueladdepadres" target="_blank">
+								<span class="login-btn-primary">
+									<span class="btn btn-sm btn-icon btn-pills btn-primary">
+										<!-- <i data-feather="music" class="icons"></i> -->
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 512 512"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="feather fea icon-sm fea-social"
+										>
+											<path
+												id="tiktok"
+												d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+											></path>
+										</svg>
+									</span>
+								</span>
+								<span class="login-btn-light">
+									<span class="btn btn-sm btn-icon btn-pills btn-light">
+										<!-- <i data-feather="music" class="icons"></i> -->
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 512 512"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="feather fea icon-sm fea-social"
+										>
+											<path
+												id="tiktok-dark"
+												d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+											></path>
+										</svg>
+									</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--end collapse-->
+			</div>
+			<!--end container-->
+		</nav>
+		<!-- END NAVBAR -->
+
+		<section class="section pb-0">
+			<div class="container">
+				<div class="row flex justify-content-lg-between align-items-center">
+					<h1>PROGRAMAS Y PROYECTOS</h1>
+
+					<div class="col-lg-5 mt-4 col-md-12">
+						<div class="list-index rounded-md p-2">
+							<ol>
+								<li>
+									<a href="#program-1" class="list-index-links"> Programa de Atención Integral a la Familia </a>
+									<ul>
+										<li>
+											<a href="#" class="list-index-links sub-links"> Área de Intervención Social </a>
+										</li>
+										<li>
+											<a href="#" class="list-index-links sub-links"> Área Educativa </a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#program-2" class="list-index-links"> Programa Anual "La Familia del Siglo XXI" </a>
+									<ul>
+										<li>
+											<a href="#" class="list-index-links sub-links"> Proyecto Escuela de Padres </a>
+										</li>
+									</ul>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-12 text-md-center">
+						<img src="gifs/kids-jumping.gif" class="img-fluid" />
+					</div>
+					<hr />
+				</div>
+			</div>
+		</section>
+
+		<!-- Program 1-->
+		<section class="m-0 p-0" id="program-1">
+			<div class="container">
+				<div class="row features feature-primary m-0">
+					<div class="col-lg-12 col-md-12 col-12 my-2 mb-4">
+						<div class="content mt-2">
+							<span class="title text-dark h4">Programa de Atención Integral a la Familia</span>
+							<p class="text-muted mt-3">
+								Este programa se divide en el área de <b>intervención psicosocial</b> y área <b>educativa</b>.
+							</p>
+						</div>
+
+						<!-- Prueba-->
+						<div class="wrapper">
+							<img class="img-gallery" src="https://source.unsplash.com/random/600x600?water" alt="" />
+							<img class="img-gallery" src="https://source.unsplash.com/random/600x600?summer" alt="" />
+							<img class="img-gallery" src="https://source.unsplash.com/random/600x600?plants" alt="" />
+							<img class="img-gallery" src="https://source.unsplash.com/random/600x600?snow" alt="" />
+							<img class="img-gallery" src="https://source.unsplash.com/random/600x600?roses" alt="" />
+							<img class="img-gallery" src="https://source.unsplash.com/random/600x600?sky" alt="" />
+							<img class="img-gallery" src="https://source.unsplash.com/random/600x600?nature" alt="" />
+							<img class="img-gallery" src="https://source.unsplash.com/random/600x600?blossom" alt="" />
+							<img class="img-gallery" src="https://source.unsplash.com/random/600x600?ice" alt="" />
+							<img class="img-gallery" src="https://source.unsplash.com/random/600x600?spring" alt="" />
+						</div>
+						<!-- END Prueba-->
+					</div>
+				</div>
+				<!--End Row-->
+
+				<div class="row mt-5">
+					<div class="col-lg-6 col-md-6 col-12 mt-2 mb-4">
+
+						<h4>Área de Intervención Social</h3>
+
+						<div class="accordion" id="accordionPanelsStayOpenExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading-AIS1">
+									<button
+										class="accordion-button"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapse-AIS1"
+										aria-expanded="true"
+										aria-controls="collapse-AIS1"
+									>
+										Psicoterapia Individual
+									</button>
+								</h2>
+								<div
+									id="collapse-AIS1"
+									class="accordion-collapse collapse show"
+									aria-labelledby="heading-AIS1"
+								>
+									<div class="accordion-body">
+										<strong>This is the first item's accordion body.</strong> It is shown by default, until the
+										collapse plugin adds the appropriate classes that we use to style each element. These classes
+										control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+										modify any of this with custom CSS or overriding our default variables. It's also worth noting
+										that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+										does limit overflow.
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading-AIS2">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapse-AIS2"
+										aria-expanded="false"
+										aria-controls="collapse-AIS2"
+									>
+										Psicoterapia de Pareja
+
+									</button>
+								</h2>
+								<div
+									id="collapse-AIS2"
+									class="accordion-collapse collapse"
+									aria-labelledby="heading-AIS2"
+								>
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+										collapse plugin adds the appropriate classes that we use to style each element. These classes
+										control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+										modify any of this with custom CSS or overriding our default variables. It's also worth noting
+										that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+										does limit overflow.
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading-AIS3">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapse-AIS3"
+										aria-expanded="false"
+										aria-controls="collapse-AIS3"
+									>
+										Psicoterapia de Familia
+									</button>
+								</h2>
+								<div
+									id="collapse-AIS3"
+									class="accordion-collapse collapse"
+									aria-labelledby="heading-AIS3"
+								>
+									<div class="accordion-body">
+										<strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+										collapse plugin adds the appropriate classes that we use to style each element. These classes
+										control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+										modify any of this with custom CSS or overriding our default variables. It's also worth noting
+										that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+										does limit overflow.
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading-AIS4">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapse-AIS4"
+										aria-expanded="false"
+										aria-controls="collapse-AIS4"
+									>
+										Psicoterapia de Grupo
+
+									</button>
+								</h2>
+								<div
+									id="collapse-AIS4"
+									class="accordion-collapse collapse"
+									aria-labelledby="heading-AIS4"
+								>
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+										collapse plugin adds the appropriate classes that we use to style each element. These classes
+										control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+										modify any of this with custom CSS or overriding our default variables. It's also worth noting
+										that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+										does limit overflow.
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading-AIS5">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapse-AIS5"
+										aria-expanded="false"
+										aria-controls="collapse-AIS5"
+									>
+										Consejería Familiar
+
+									</button>
+								</h2>
+								<div
+									id="collapse-AIS5"
+									class="accordion-collapse collapse"
+									aria-labelledby="heading-AIS5"
+								>
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+										collapse plugin adds the appropriate classes that we use to style each element. These classes
+										control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+										modify any of this with custom CSS or overriding our default variables. It's also worth noting
+										that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+										does limit overflow.
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 
-					<div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-						<div class="text-center">
-							<p class="mb-0">
-								©
-								<script>
-									document.write(new Date().getFullYear());
-								</script>
-								EPB Diseñada con <i class="mdi mdi-heart text-danger"></i> por
-								<a href="https://www.facebook.com/search/top?q=lambdasoft" target="_blank"
-									class="text-reset">PEPB</a>.
+					<div class="col-lg-6 col-md-6 col-12 mt-2 mb-4">
+
+						<h4>Área Educativa</h3>
+
+						<div class="accordion" id="accordionPanelsStayOpenExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading-AE1">
+									<button
+										class="accordion-button"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapse-AE1"
+										aria-expanded="true"
+										aria-controls="collapse-AE1"
+									>
+										Talleres a Grupo de Papás de EPB
+									</button>
+								</h2>
+								<div
+									id="collapse-AE1"
+									class="accordion-collapse collapse show"
+									aria-labelledby="heading-AE1"
+								>
+									<div class="accordion-body">
+										<strong>This is the first item's accordion body.</strong> It is shown by default, until the
+										collapse plugin adds the appropriate classes that we use to style each element. These classes
+										control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+										modify any of this with custom CSS or overriding our default variables. It's also worth noting
+										that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+										does limit overflow.
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading-AE2">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapse-AE2"
+										aria-expanded="false"
+										aria-controls="collapse-AE2"
+									>
+										Talleres a Unidades Educativas
+									</button>
+								</h2>
+								<div
+									id="collapse-AE2"
+									class="accordion-collapse collapse"
+									aria-labelledby="heading-AE2"
+								>
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+										collapse plugin adds the appropriate classes that we use to style each element. These classes
+										control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+										modify any of this with custom CSS or overriding our default variables. It's also worth noting
+										that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+										does limit overflow.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End Row-->
+			</div>
+			<!--End Container-->
+		</section>
+		<!-- End Program 1-->
+
+		<!-- Program 2-->
+		<section id="program-2">
+			<div class="container">
+				<div class="row features feature-primary m-0">
+					<div class="col-lg-12 col-md-12 col-12 my-2">
+						<div class="content mt-2 content-program-family">
+							<hr>
+							<span class="title text-dark h4">Programa Anual "La Familia del Siglo XXI"</span>
+							<p class="text-muted mt-3">
+								Dentro de este programa tenemos el proyecto <b>"Escuela de Padres".</b>
 							</p>
 						</div>
 					</div>
-
-					<div class="col-sm-3 mt-4 mt-sm-0 pt-2 pt-sm-0">
-						<ul class="list-unstyled social-icon foot-social-icon text-sm-end mb-0">
-							<li class="list-inline-item mb-0">
-								<a href="https://www.facebook.com/Escuela-de-Padres-Filial-La-Paz-312585152470895"
-									class="rounded" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-										height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-										stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-										class="feather feather-facebook fea icon-sm fea-social">
-										<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
-										</path>
-									</svg></a>
-							</li>
-							<li class="list-inline-item mb-0">
-								<a href="#" class="rounded"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-										height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-										stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-										class="feather feather-instagram fea icon-sm fea-social">
-										<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-										<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-										<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-									</svg></a>
-							</li>
-							<li class="list-inline-item mb-0">
-								<a href="https://www.tiktok.com/@escueladdepadres"  class="rounded">
-									<!--SVG TIK TOK-->
-									<svg  xmlns="http://www.w3.org/2000/svg" width="24"
-									height="24" viewBox="0 0 512 512" fill="none" stroke="currentColor"
-									stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-									class="feather fea icon-sm fea-social">
-									<path id="tiktok"  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path>
-								</svg>
-							</a>
-							</li>
-
-						</ul>
-						<!--end icon-->
-					</div>
-					<!--end col-->
 				</div>
-				<!--end row-->
+
+				<div class="row features feature-primary mb-5">
+					<div class="col-lg-6 col-md-12 col-12 mb-2">
+						<div class="content content-program-family">
+
+							<p class="text-muted">
+								Este proyecto nace de la necesidad del fortalecimiento de los valores en el hogar a partir de conversatorios, como un espacio de auto-conocimiento y reflexión desde la individualidad hacia la convivencia con el otro, un espacio donde los padres, madres o tutores adquieran habilidades y recursos emocionales que les permitan participar de manera activa positiva de la vida de sus hijos e hijas.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 col-12 my-2">
+						<video src="videos/Dad.mp4" height="100%" width="100%" autoplay class="img-fluid"></video>
+						
+					</div>
+				</div>
 			</div>
-			<!--end container-->
-		</div>
-	</footer>
-	<!-- End Footer -->
+		</section>
+		<!-- End Program 2-->
 
-	<!-- Back to top -->
-	<a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top rounded-pill fs-5"><i
-			data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
-	<!-- Back to top -->
+		<!-- Start Footer -->
+		<footer class="bg-footer footer-bar">
+			<div class="footer-py-30">
+				<div class="container text-center">
+					<div class="row align-items-center">
+						<div class="col-sm-3">
+							<div class="text-sm-start">
+								<a href="#" class="logo-footer">
+									<img src="images/logo-dark2.png" height="100px" alt="" />
+								</a>
+							</div>
+						</div>
 
-	<!-- JAVASCRIPTS -->
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/tobii.min.js"></script>
-	<script src="js/contact.js"></script>
-	<script src="js/feather.min.js"></script>
-	<!-- Custom -->
-	<script src="js/plugins.init.js"></script>
-	<script src="js/app.js"></script>
-</body>
+						<div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+							<div class="text-center">
+								<p class="mb-0">
+									©
+									<script>
+										document.write(new Date().getFullYear());
+									</script>
+									EPB Diseñada con <i class="mdi mdi-heart text-danger"></i> por
+									<a href="https://www.facebook.com/search/top?q=lambdasoft" target="_blank" class="text-reset"
+										>PEPB</a
+									>.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-sm-3 mt-4 mt-sm-0 pt-2 pt-sm-0">
+							<ul class="list-unstyled social-icon foot-social-icon text-sm-end mb-0">
+								<li class="list-inline-item mb-0">
+									<a
+										href="https://www.facebook.com/Escuela-de-Padres-Filial-La-Paz-312585152470895"
+										class="rounded"
+										target="_blank"
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="feather feather-facebook fea icon-sm fea-social"
+										>
+											<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg
+									></a>
+								</li>
+								<li class="list-inline-item mb-0">
+									<a href="#" class="rounded"
+										><svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="feather feather-instagram fea icon-sm fea-social"
+										>
+											<rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+											<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+											<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg
+									></a>
+								</li>
+								<li class="list-inline-item mb-0">
+									<a href="https://www.tiktok.com/@escueladdepadres" class="rounded">
+										<!--SVG TIK TOK-->
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 512 512"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="1"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="feather fea icon-sm fea-social"
+										>
+											<path
+												id="tiktok"
+												d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+											></path>
+										</svg>
+									</a>
+								</li>
+							</ul>
+							<!--end icon-->
+						</div>
+						<!--end col-->
+					</div>
+					<!--end row-->
+				</div>
+				<!--end container-->
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+		<!-- Back to top -->
+		<a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top rounded-pill fs-5"
+			><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i
+		></a>
+		<!-- Back to top -->
+
+		<!-- JAVASCRIPTS -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tobii.min.js"></script>
+		<script src="js/contact.js"></script>
+		<script src="js/feather.min.js"></script>
+
+		<!-- Custom -->
+		<script src="js/plugins.init.js"></script>
+		<script src="js/app.js"></script>
+		<!-- Swiper JS -->
+	</body>
 </html>

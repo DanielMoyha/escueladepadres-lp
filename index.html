@@ -25,9 +25,11 @@
 
 	<!-- Custom  Css -->
 	<link href="css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
+	<link rel="stylesheet/less" type="text/css" href="scss/scroll.scss" />
+		<script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" class="scroll">
 
 	<!-- START NAVBAR -->
 	<nav id="navbar" class="navbar navbar-expand-lg nav-light fixed-top sticky">
@@ -300,7 +302,7 @@
 							<button class="program-btn">Psicoterapia individual</button>
 							<button class="program-btn">Psicoterapia de pareja</button>
 							<button class="program-btn">Psicoterapia de familia</button>
-							<button class="program-btn">Psicoterapia de grupo</button>
+							<!-- <button class="program-btn">Psicoterapia de grupo</button> -->
 							<button class="program-btn">Consejería Familiar</button>
 						</div>
 
@@ -481,7 +483,7 @@
 			<div class="row justify-content-center">
 				<div class="col">
 					<div class="section-title text-center mb-4 pb-2">
-						<h2 class="heading"><span class="text-primary">Portafolio</span></h2>
+						<h2 class="heading"><span class="text-primary">Proyectos</span></h2>
 						<h4 class="title mb-3">Nuestros trabajos y Proyectos</h4>
 						<p class="text-muted mx-auto para-desc mb-0">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio iure nobis iste officia
@@ -495,14 +497,21 @@
 
 			<div class="row">
 				<div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-					<div
-						class="card border-0 project project-primary position-relative d-block overflow-hidden rounded">
+					<div class="card border-0 project project-primary position-relative d-block overflow-hidden rounded">
 						<div class="card-body p-0">
-							<img src="images/portfolio/p1.avif" class="img-fluid" alt="work-image" />
+							<img src="images/portfolio/p1.avif" class="img-fluid img-program" alt="imagen proyecto" />
+
 							<div class="overlay-work bg-dark"></div>
+
 							<div class="content">
-								<h6 class="mb-0"><a href="#" class="text-white title">Título Trabajo</a></h6>
-								<p class="text-light tag mb-0">Área</p>
+								<h6 class="mb-0">
+									<a href="#" class="text-white title">
+										Título Proyecto
+									</a>
+								</h6>
+								<p class="text-light tag mb-0">
+									Institución
+								</p>
 							</div>
 							<div class="icons text-center">
 								<a href="images/portfolio/p1.avif" class="btn btn-icon btn-pills lightbox"><i
@@ -514,14 +523,21 @@
 				<!--end col-->
 
 				<div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-					<div
-						class="card border-0 project project-primary position-relative d-block overflow-hidden rounded">
+					<div class="card border-0 project project-primary position-relative d-block overflow-hidden rounded">
 						<div class="card-body p-0">
-							<img src="images/portfolio/p2.avif" class="img-fluid" alt="work-image" />
+							<img src="images/portfolio/p2.avif" class="img-fluid img-program" alt="imagen proyecto" />
+
 							<div class="overlay-work bg-dark"></div>
+
 							<div class="content">
-								<h6 class="mb-0"><a href="#" class="text-white title">Título Trabajo</a></h6>
-								<p class="text-light tag mb-0">Área</p>
+								<h6 class="mb-0">
+									<a href="#" class="text-white title">
+										Título Proyecto
+									</a>
+								</h6>
+								<p class="text-light tag mb-0">
+									Institución
+								</p>
 							</div>
 							<div class="icons text-center">
 								<a href="images/portfolio/p2.avif" class="btn btn-icon btn-pills lightbox"><i
@@ -533,112 +549,24 @@
 				<!--end col-->
 
 				<div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-					<div
-						class="card border-0 project project-primary position-relative d-block overflow-hidden rounded">
+					<div class="card border-0 project project-primary position-relative d-block overflow-hidden rounded">
 						<div class="card-body p-0">
-							<img src="images/portfolio/p1.avif" class="img-fluid" alt="work-image" />
+							<img src="images/portfolio/p1.avif" class="img-fluid img-program" alt="imagen proyecto" />
+
 							<div class="overlay-work bg-dark"></div>
+
 							<div class="content">
-								<h6 class="mb-0"><a href="#" class="text-white title">Título Trabajo</a></h6>
-								<p class="text-light tag mb-0">Área</p>
+								<h6 class="mb-0">
+									<a href="#" class="text-white title">
+										Título Proyecto
+									</a>
+								</h6>
+								<p class="text-light tag mb-0">
+									Institución
+								</p>
 							</div>
 							<div class="icons text-center">
 								<a href="images/portfolio/p1.avif" class="btn btn-icon btn-pills lightbox"><i
-										data-feather="camera" class="fea icon-sm image-icon"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--end col-->
-
-				<div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-					<div
-						class="card border-0 project project-primary position-relative d-block overflow-hidden rounded">
-						<div class="card-body p-0">
-							<img src="images/portfolio/p2.avif" class="img-fluid" alt="work-image" />
-							<div class="overlay-work bg-dark"></div>
-							<div class="content">
-								<h6 class="mb-0"><a href="#" class="text-white title">Título Trabajo</a></h6>
-								<p class="text-light tag mb-0">Área</p>
-							</div>
-							<div class="icons text-center">
-								<a href="images/portfolio/p2.avif" class="btn btn-icon btn-pills lightbox"><i
-										data-feather="camera" class="fea icon-sm image-icon"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--end col-->
-
-				<div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-					<div
-						class="card border-0 project project-primary position-relative d-block overflow-hidden rounded">
-						<div class="card-body p-0">
-							<img src="images/portfolio/p1.avif" class="img-fluid" alt="work-image" />
-							<div class="overlay-work bg-dark"></div>
-							<div class="content">
-								<h6 class="mb-0"><a href="#" class="text-white title">Título Trabajo</a></h6>
-								<p class="text-light tag mb-0">Área</p>
-							</div>
-							<div class="icons text-center">
-								<a href="images/portfolio/p1.avif" class="btn btn-icon btn-pills lightbox"><i
-										data-feather="camera" class="fea icon-sm image-icon"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--end col-->
-
-				<div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-					<div
-						class="card border-0 project project-primary position-relative d-block overflow-hidden rounded">
-						<div class="card-body p-0">
-							<img src="images/portfolio/p2.avif" class="img-fluid" alt="work-image" />
-							<div class="overlay-work bg-dark"></div>
-							<div class="content">
-								<h6 class="mb-0"><a href="#" class="text-white title">Título Trabajo</a></h6>
-								<p class="text-light tag mb-0">Área</p>
-							</div>
-							<div class="icons text-center">
-								<a href="images/portfolio/p2.avif" class="btn btn-icon btn-pills lightbox"><i
-										data-feather="camera" class="fea icon-sm image-icon"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--end col-->
-
-				<div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-					<div
-						class="card border-0 project project-primary position-relative d-block overflow-hidden rounded">
-						<div class="card-body p-0">
-							<img src="images/portfolio/p1.avif" class="img-fluid" alt="work-image" />
-							<div class="overlay-work bg-dark"></div>
-							<div class="content">
-								<h6 class="mb-0"><a href="#" class="text-white title">Título Trabajo</a></h6>
-								<p class="text-light tag mb-0">Área</p>
-							</div>
-							<div class="icons text-center">
-								<a href="images/portfolio/p1.avif" class="btn btn-icon btn-pills lightbox"><i
-										data-feather="camera" class="fea icon-sm image-icon"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--end col-->
-
-				<div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-					<div
-						class="card border-0 project project-primary position-relative d-block overflow-hidden rounded">
-						<div class="card-body p-0">
-							<img src="images/portfolio/p2.avif" class="img-fluid" alt="work-image" />
-							<div class="overlay-work bg-dark"></div>
-							<div class="content">
-								<h6 class="mb-0"><a href="#" class="text-white title">Título Trabajo</a></h6>
-								<p class="text-light tag mb-0">Área</p>
-							</div>
-							<div class="icons text-center">
-								<a href="images/portfolio/p2.avif" class="btn btn-icon btn-pills lightbox"><i
 										data-feather="camera" class="fea icon-sm image-icon"></i></a>
 							</div>
 						</div>
@@ -1462,6 +1390,7 @@
 	<!-- Custom -->
 	<script src="js/plugins.init.js"></script>
 	<script src="js/app.js"></script>
+	
 </body>
 
 </html>

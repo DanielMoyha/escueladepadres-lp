@@ -8,6 +8,8 @@
 	--color-black: #2c2424;
 	--color-selection: #393a2f;
 	--color-white: #fff;
+	--color-blue: #202942;
+	--color-blue-light: #3c559b;
 }
 
 body {
@@ -15,6 +17,7 @@ body {
 	overflow-x: hidden !important;
 	font-size: 15px;
 	color: var(--color-black);
+	/* background-color: #F7F7F7; */
 }
 
 /*Dandole color al logo de tik tok*/
@@ -3026,6 +3029,13 @@ button:not(:disabled) {
 	border-color: var(--color-primary-dark) !important;
 	color: var(--color-white) !important;
 }
+.img-program{
+	height: 200px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
 .project.project-blue .title:hover {
 	color: #2a52c3 !important;
 }
@@ -3420,4 +3430,29 @@ footer .text-foot {
 	width: 100%;
 }
 
-/** Fin pruebas*/
+/** Fin pruebas */
+
+
+/** Page Programs */
+.list-index{
+	border: 2px solid var(--color-primary);
+	/* max-width: 30rem; */
+}
+.list-index > ol{
+
+	font-weight: bold;
+}
+.list-index-links{
+	color: var(--color-blue-light);
+}
+.sub-links{
+	color: var(--color-blue);
+}
+.list-index-links:hover{
+	color: var(--color-primary);
+}
+
+/** Prueba */ 
+
+
+/** END Prueba */ 
