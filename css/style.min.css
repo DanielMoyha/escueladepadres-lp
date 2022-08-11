@@ -2028,7 +2028,7 @@ button:not(:disabled) {
 	}
 }
 .bg-half-260 {
-	padding: 260px 0;
+	padding: 150px 0;
 	background-size: cover !important;
 	align-self: center;
 	position: relative;
@@ -2070,9 +2070,9 @@ button:not(:disabled) {
 
 /* --------------------------- ABOUT---------------------------  */
 
-.about .text-center {
+/* .about .text-center {
 	margin-bottom: 100px;
-}
+} */
 .about .img-bg {
 	position: relative;
 }
@@ -3030,10 +3030,11 @@ button:not(:disabled) {
 	color: var(--color-white) !important;
 }
 .img-program{
-	height: 200px;
+	
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+	width: auto;
 }
 
 .project.project-blue .title:hover {
